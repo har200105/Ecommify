@@ -67,7 +67,6 @@ class _AdminScreenState extends State<AdminScreen> {
         iconSize: 28,
         onTap: updatePage,
         items: [
-          // POSTS
           BottomNavigationBarItem(
             icon: Container(
               width: bottomBarWidth,
@@ -85,7 +84,6 @@ class _AdminScreenState extends State<AdminScreen> {
             ),
             label: '',
           ),
-          // ANALYTICS
           BottomNavigationBarItem(
             icon: Container(
               width: bottomBarWidth,
@@ -103,7 +101,6 @@ class _AdminScreenState extends State<AdminScreen> {
             ),
             label: '',
           ),
-          // ORDERS
           BottomNavigationBarItem(
             icon: Container(
               width: bottomBarWidth,

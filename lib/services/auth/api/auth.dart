@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:ecommify/models/user.dart';
 import 'package:ecommify/provider/user.dart';
+import 'package:ecommify/shared/data/API.dart';
 import 'package:ecommify/utils/Errorhandler.dart';
 import 'package:ecommify/utils/GlobalVariables.dart';
 import 'package:ecommify/utils/Snackbar.dart';
@@ -27,7 +28,7 @@ class AuthService {
           address: '',
           email: email,
           cart: []);
-      http.Response response = await http.post(Uri.parse('$uri/api/signup'),
+      http.Response response = await http.post(Uri.parse('$API/api/signup'),
           body: user.toJson(), headers: {'Content-Type': 'Application/json'});
 
       showSnackBar(context, 'Account Created Successfully');
@@ -48,7 +49,7 @@ class AuthService {
           address: '',
           cart: [],
           email: email);
-      http.Response response = await http.post(Uri.parse('$uri/api/login'),
+      http.Response response = await http.post(Uri.parse('$API/api/login'),
           body: user.toJson(), headers: {'Content-Type': 'Application/json'});
 
       // showSnackBar(context, 'Login Successfully');

@@ -26,7 +26,7 @@ class AdminServices {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
 
     try {
-      final cloudinary = CloudinaryPublic('denfgaxvg', 'uszbstnu');
+      final cloudinary = CloudinaryPublic('har_111', 'harshit');
       List<String> imageUrls = [];
 
       for (int i = 0; i < images.length; i++) {
@@ -67,7 +67,6 @@ class AdminServices {
     }
   }
 
-  // get all the products
   Future<List<Product>> fetchAllProducts(BuildContext context) async {
     final userProvider = Provider.of<UserProvider>(context, listen: false);
     List<Product> productList = [];
