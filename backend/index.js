@@ -8,6 +8,7 @@ const app = express();
 require('dotenv').config();
 
 require('./db')();
+
 app.use(express.json());
 app.use(authRouter);
 app.use(adminRouter);
@@ -15,5 +16,5 @@ app.use(productRouter);
 app.use(userRouter);
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`connected at port ${PORT}`);
+  console.log(`Connected at port ${PORT}`);
 });
